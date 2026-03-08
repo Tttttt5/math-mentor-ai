@@ -1,11 +1,13 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "backend"))
+
 import streamlit as st
-from backend.graph.agent_graph import run_math_pipeline
+from graph.agent_graph import run_math_pipeline
 import easyocr
 import speech_recognition as sr
 from audiorecorder import audiorecorder
-import sys
-sys.path.append("backend")
-
 import tempfile
 
 
